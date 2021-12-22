@@ -13,23 +13,30 @@ You should see in your terminal a message indicating that the server is listenin
 > Server Listening for port: 8000
 
 2. To make sure your application is working fine and it creates the Genesis Block you can use POSTMAN to request the Genesis block:
-    ![Request: http://localhost:8000/blocks/0](/Step_1_Request_Genesis_Block.jpg)
+    
+    ![Request: http://localhost:8000/blocks/0](/Project%201%20-%20Create%20Your%20Own%20Private%20Blockchain/Step_1_Request_Genesis_Block.jpg)
 
 3. Make your first request of ownership sending your wallet address:
-    ![Request: http://localhost:8000/requestValidation ](/Step_2_RequestValidation.jpg)
+    
+    ![Request: http://localhost:8000/requestValidation ](/Project%201%20-%20Create%20Your%20Own%20Private%20Blockchain/Step_2_RequestValidation.jpg)
 
 4. Sign the message with your Wallet:
-    ![Use the Wallet to sign a message](/Step_3_Sign_Message.jpg)
+    
+    ![Use the Wallet to sign a message](/Project%201%20-%20Create%20Your%20Own%20Private%20Blockchain/Step_3_Sign_Message.jpg)
 
 5. Submit your Star:
-     ![Request: http://localhost:8000/submitstar](/Step_4_Submit_Star.jpg)
+     
+     ![Request: http://localhost:8000/submitstar](/Project%201%20-%20Create%20Your%20Own%20Private%20Blockchain/Step_4_Submit_Star.jpg)
 
 6. Request the new block:
-    ![Request: http://localhost:8000/blocks/1](/Step_5_Request_Block.jpg)
+    
+    ![Request: http://localhost:8000/blocks/1](/Project%201%20-%20Create%20Your%20Own%20Private%20Blockchain/Step_5_Request_Block.jpg)
 
 7. Retrieve Stars owned by me:
-    ![Request: http://localhost:8000/blocks/<WALLET_ADDRESS>](/Step_6_Retrieve_Stars_By_Address.jpg)
+    
+    ![Request: http://localhost:8000/blocks/<WALLET_ADDRESS>](/Project%201%20-%20Create%20Your%20Own%20Private%20Blockchain/Step_6_Retrieve_Stars_By_Address.jpg)
 
 8. Validate the blockchain:
-    ![Request: http://localhost:8000/validateChain](/Step_7_ValidateChain.jpg)
+    
+    ![Request: http://localhost:8000/validateChain](/Project%201%20-%20Create%20Your%20Own%20Private%20Blockchain/Step_7_ValidateChain.jpg)
     
