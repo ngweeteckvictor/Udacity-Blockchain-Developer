@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Apples</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Organic Apples</h1>
+        <hr>
+        <p style="text-align: center;">Prove the authenticity of organic apples using the Ethereum blockchain.</p>
+    </div>
+
+    <div id="ftc-overview">
+        <div class="form-group">
+            UPC
+            <br>
+            <input type="number" id="upc" name="upc" value=1><br>
+            Current Owner ID
+            <br>
+            <input type="text" id="ownerID" name="ownerID" value="0xCc076AFCEa729702B974258524336511Fc405F03" size="50"><br>
+            <div class=button-div>
+                <button id="btn-fetchAppleFarmerHistory" onclick="App.fetchAppleFarmerHistory()">Fetch Farmer History</button>
+                <button id="btn-fetchAppleHistory" onclick="App.fetchAppleHistory()">Fetch Apple History</button>
+            </div>
+        </div>
+        <div class=form-break></div>
+        <h2>Farm Details</h2>
+        <div class="form-group">
+            Farmer ID
+            <br>
+            <input type="text" id="originFarmerID" name="originFarmerID" value="0xaa798D65ee88a42709Cd71CfC5c7b3A86E16d53c"
+                size="50"><br>
+            Farm Name
+            <br>
+            <input type="text" id="originFarmName" name="originFarmName" value="John Doe"><br>
+            Farm Information
+            <br>
+            <input type="text" id="originFarmInformation" name="originFarmInformation" value="Yarra Valley"><br>
+            Farm Latitude
+            <br>
+            <input type="text" id="originFarmLatitude" name="originFarmLatitude" value="-38.239770"><br>
+            Farm Longitude
+            <br>
+            <input type="text" id="originFarmLongitude" name="originFarmLongitude" value="144.341490"><br>
+            <br>    
+            <button id="btn-addFarmer" onclick="App.addFarmer()">Add Farmer</button>
+            <button id="btn-farmerHarvest" onclick="App.harvestApples()">Harvest</button>
+            <button id="btn-farmerPack" onclick="App.packApples()">Pack</button>
+            <button id="btn-farmerShip" onclick="App.shipApplesToDistributor()">Ship</button>
+        </div>
+
+        <div class=form-break></div>
+        <h2>Distributor Details</h2>
+        <div class="form-group">
+            Distributor ID
+            <br>
+            <input type="text" id="distributorID" name="distributorID" value="0xc82Afb5e3D3a1a8bBE25bF9fc9b93aD05B0AA7bE"
+                size="50"><br>
+            <br>
+            <button id="btn-addDistributor" onclick="App.addDistributor()">Add Distributor</button>
+            <button id="btn-distributorReceive" onclick="App.receiveApplesByDistributor()">Receive</button>
+            <button id="btn-distributorShip" onclick="App.shipApplesToRetailer()">Ship</button>
+        </div>
+
+        <div class=form-break></div>
+        <h2>Retailer Details</h2>
+        <div class="form-group">
+            Retailer ID
+            <br>
+            <input type="text" id="retailerID" name="retailerID" value="0x26F2459aB87Ce87634AbdC29AFDc82bAFFD1335e"
+            size="50"><br>
+            <br>
+            <button id="btn-addRetailer" onclick="App.addRetailer()">Add Retailer</button>
+            <button id="btn-retailerReceive" onclick="App.receiveApplesByRetailer()">Receive</button>
+            <button id="btn-retailerOnSale" onclick="App.onSaleApples()">On Sale</button>
+        </div>
+        
+        <div class=form-break></div>
+        <h2>Consumer Details</h2>
+        <div class="form-group">
+            Consumer ID
+            <br>
+            <input type="text" id="consumerID" name="consumerID" value="0xCFFAd2Ec8189D3a99BdB152FBeB928A40EFCF593"
+                size="50"><br>
+            <br>
+            <button id="btn-addConsumer" onclick="App.addConsumer()">Add Consumer</button>
+            <button id="btn-consumerPurchase" onclick="App.purchaseApples()">Purchase</button>
+        </div>
+        <div class=form-break></div>
+        <hr>
+    </div>
+
+    <h2>Transaction History<span id="ftc-history"></span></h2>
+    <div>
+        <ul id="ftc-item">
+            <!-- Events will appear here from app.js -->
+        </ul>
+        <br>
+        <hr>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/web3.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@0.20.6/dist/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
