@@ -61,9 +61,10 @@ Below are the UML diagrams that I created for this Organic Apples Supply Chain S
 ## Requirement 3: Project Write-Up - IPFS
 --------------------------------------------------------------
 
-- IPFS was not used in this project.
+- The front-end application is hosted on the IPFS (InterPlanetary File System) to create a fully-decentralised application.
+<br><br>
+- The address of deployed front-end application on the IPFS: <https://ipfs.io/ipfs/QmbasSYCBF2Zssed5YrgUkBfV84EcgC1TxcaPEDpmgHJgb/>
 
-<br>
 
 ## Requirement 4: Project Write-Up - General
 --------------------------------------------------------------  
@@ -77,9 +78,9 @@ Below are the UML diagrams that I created for this Organic Apples Supply Chain S
 ### Contract Address
 - To deploy the contract to the Rinkeby Network using Truffle: truffle migrate --network rinkeby
 <br><br>
-- The deployed contract address on the Rinkeby Network: 0x213d063a71BC05D0dCAF054417788Efe969305D4
+- The deployed contract address on the Rinkeby Network: [0x213d063a71BC05D0dCAF054417788Efe969305D4](https://rinkeby.etherscan.io/address/0x213d063a71BC05D0dCAF054417788Efe969305D4)
 <br><br>
-- The deployed contract hash on the Rinkeby Network: 0x63b8c59eadc91df272c6de069562f5781668e9da17c08b91a2e5f65a59e84cb5
+- The deployed contract hash on the Rinkeby Network: [0x63b8c59eadc91df272c6de069562f5781668e9da17c08b91a2e5f65a59e84cb5](https://rinkeby.etherscan.io/tx/0x63b8c59eadc91df272c6de069562f5781668e9da17c08b91a2e5f65a59e84cb5)
 
 ### Transaction Hash
 
@@ -89,14 +90,12 @@ Below are the UML diagrams that I created for this Organic Apples Supply Chain S
 - addConsumer: 0x53402df8920ee591fe4358fc4d624d8390b8865ec0c0355fc9058a148bbc3021
 - harvestApples: 0x47ca6283e7a43ca6fc8c2632155e7d9f357d6ee7e32cd761069f7196b822a7c1
 - packApples: 0x63cf40c29f1073d9e3c8fc55ad69ec6ba85277ce0c9299d2fa42144c9696569c
-- shipApplesToDistributor:0xf79c5e449a897ff7655b893e80f96abed48f8e1a335b01103b775eef2972e537
-- receiveApplesByDistributor:133
-- shipApplesToRetailer:123
-- receiveApplesByRetailer:123
-- onSaleApples:123
-- purchaseApples:123
-- fetchAppleFarmerHistory:123
-- fetchAppleHistory:123
+- shipApplesToDistributor: 0xf79c5e449a897ff7655b893e80f96abed48f8e1a335b01103b775eef2972e537
+- receiveApplesByDistributor: 0x976582ebef732570a6eb22915c108d46b0e3c2d4122dc3fec86eec690ecf103e
+- shipApplesToRetailer: 0xade9cc113d41535eeb191777a4458db59918ca26920fad73349fe7a286de0e39
+- receiveApplesByRetailer: 0x34c8170c72821322ccb650964e80f666d27f23100a2c1c0fb7f960f29d70481a
+- onSaleApples: 0xfa87127895a724fe57ba43308930b8e00aab661ba3f88406fb10e69366a16a0c
+- purchaseApples: 0x41b6b2f9c6b03a84b51e6a2a9b226a94dfc65a3433b9cdfb0b1ede03c8c5f95b
 
 ### Transaction History
 
