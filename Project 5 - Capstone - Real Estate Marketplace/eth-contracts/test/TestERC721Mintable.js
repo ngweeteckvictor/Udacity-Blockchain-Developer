@@ -151,12 +151,12 @@ contract('TestERC721Mintable', accounts => {
         })
 
         it('Should return token name', async function () {
-            let result = await this.contract.getName.call();
+            let result = await this.contract.name.call();
             assert.equal(result, name, "Incorrect token name returned");
         })
 
         it('Should return token name', async function () {
-            let result = await this.contract.getSymbol.call();
+            let result = await this.contract.symbol.call();
             assert.equal(result, symbol, "Incorrect token symbol returned");
         })
 
