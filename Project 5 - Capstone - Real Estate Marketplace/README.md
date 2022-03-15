@@ -11,24 +11,23 @@ The contracts are tested using the Truffle Test. Test cases were written for the
 ```
 > Ganache
 ```
-<br>
+
 2. Open a separate terminal window and use Truffle's interactive console to connect to the Ganache client:
 ```
 > truffle console --network development
 
-    Note: Ensure that the development's port number in truffle-config.js is the same as your Ganache client.
+Note: Ensure that the development's port number in truffle-config.js is the same as your Ganache client.
 ```
-<br>
 3. In the truffle development's console, to compile the contracts:
 ```
 truffle(development)> compile
 ```
-<br>
+
 4. In the truffle development's console, to run all the tests:
 ```
 truffle(development)> test
 ```
-<br>
+
 5. In the truffle development's console, to run individual test:
 ```
 truffle(development)> test ./test/TestERC721Mintable.js
@@ -43,15 +42,15 @@ The contracts are deployed into the Rinkeby network using Truffle:
 ```
 > truffle migrate --reset --network rinkeby
 
-    Note: Ensure that the information of the Rinkeby network is in the truffle-config.js.
+Note: Ensure that the information of the Rinkeby network is in the truffle-config.js.
 ```
-<br>
+
 The contract's address is as follows:
 
 ### Verifier Contract's Address: https://rinkeby.etherscan.io/address/0xa3C9c74B02BF3200D7dB6a3d1e39c7DC9B1E6Cd6
 
 ### SolnSquareVerifier Contract's Address: https://rinkeby.etherscan.io/address/0x435cd3c70ae7775ebb143be924045482e2f89e10
-<br>
+
 10 tokens were minted using the same Zokrates proof during the deployment into the Rinkeby network.
 
 The tokens were listed into the OpenSea MarketPlace using the link:
